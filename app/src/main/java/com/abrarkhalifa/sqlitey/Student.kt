@@ -16,9 +16,11 @@ data class Student(val item:String , val desc:String) {
         this.quentity = quentity
     }
 
+
     constructor(item: String,desc: String,price: String):this(item, desc){
         this.price = price
     }
+
     constructor(id: Int,item: String,desc: String,price: String):this(item, desc){
         this.price = price
         this.id = id
@@ -29,6 +31,8 @@ data class Student(val item:String , val desc:String) {
         this.price = price
         this.quentity = quentity
     }
+
+
 
 
 

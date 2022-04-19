@@ -3,7 +3,9 @@ package com.abrarkhalifa.sqlitey
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewConfiguration.get
 import android.view.ViewGroup
+import androidx.appcompat.view.ActionBarPolicy.get
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.items_row.view.*
 
@@ -36,6 +38,9 @@ class Adapter(val context:Context, private val arrayList: ArrayList<Student>) : 
 
         }
         holder.itemView.imgMinus.setOnClickListener{
+            var qnt = arrayList.get(position).quentity
+            arrayList.get(position).quentity
+
 
         }
 
@@ -49,6 +54,7 @@ class Adapter(val context:Context, private val arrayList: ArrayList<Student>) : 
 
 
     class myadapter(itemView : View) : RecyclerView.ViewHolder(itemView) {
+
 
         fun bind(p:Student){
             itemView.tvItem.text= p.item.toString()
